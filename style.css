@@ -6,6 +6,12 @@
 body{
     background-color: #eee;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 .product-card{
     background-color: #fff;
     width: 330px;
@@ -21,6 +27,7 @@ body{
     }
 }
 #products-card-group{
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -72,4 +79,34 @@ p{
 #record-info{
     font-weight: 600;
     margin-left: 50px;
+}
+.search-bar{
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 40%;
+    float: right;
+    >#search{
+        width: 60%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+    }
+}
+@media(max-width: 619px){
+    .search-bar{
+        width: 60%;
+    }
+}
+
+@media(max-width: 420px){
+    .search-bar{
+        width: 80%;
+    }
+}
+
+@media(max-width: 325px){
+    .search-bar{
+        width: 90%;
+        margin-left: 30px;
+    }
 }
