@@ -23,7 +23,7 @@ fetch(productApi).then(function(responce){
 }).catch(function(error){
     console.log('cant fetch length');
 })
-
+ 
 function displayData(data){
     console.log(data.products)
     productsCardGroup.innerHTML = ''; // Clear previous content
@@ -36,6 +36,7 @@ function displayData(data){
         let productCards = document.createElement('div');
         productCards.className = 'product-card';
         let productImage = document.createElement('img');
+        productImage.className = 'img-responsive';
         let productTitle = document.createElement('p');
         productTitle.className = 'product-title';
         let productPrice = document.createElement('p');
@@ -160,5 +161,3 @@ fetchProductData();
     searchInput.value = '';
     fetchProductData();
  }
-
-
